@@ -1,5 +1,10 @@
 # rubocop-style-compact_nesting
 
+[![Gem Version](https://img.shields.io/gem/v/rubocop-style-compact_nesting.svg)](https://rubygems.org/gems/rubocop-style-compact_nesting)
+[![CI](https://github.com/ramongr/rubocop-style-compact_nesting/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ramongr/rubocop-style-compact_nesting/actions/workflows/ci.yml)
+[![Downloads](https://img.shields.io/gem/dt/rubocop-style-compact_nesting.svg)](https://rubygems.org/gems/rubocop-style-compact_nesting)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
+
 A RuboCop plugin that enforces a hybrid module/class nesting style:
 
 - All namespace segments are **collapsed onto a single `module` line** using
