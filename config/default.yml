@@ -1,0 +1,9 @@
+Style/CompactModuleNesting:
+  Description: >-
+    Enforce a compact outer module namespace with a separately nested
+    innermost class or module.
+  Enabled: true
+  Severity: convention
+  VersionAdded: '0.1'
+  SafeAutoCorrect: true
+  StyleGuide: ~

@@ -1,0 +1,45 @@
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  SuggestExtensions: false
+
+# This file's name is dictated by the rubygems naming convention.
+Naming/FileName:
+  Exclude:
+    - lib/rubocop-style-compact_nesting.rb
+
+# AST traversal is naturally branchy; the readability cost of further
+# splitting isn't worth it here.
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/PerceivedComplexity:
+  Max: 11
+Metrics/MethodLength:
+  Max: 25
+  Exclude:
+    - test/**/*
+
+Metrics/AbcSize:
+  Max: 26
+  Exclude:
+    - test/**/*
+
+Metrics/ClassLength:
+  Max: 150
+  Exclude:
+    - test/**/*
+
+# Test methods using <<~RUBY heredocs are necessarily long.
+Metrics/BlockLength:
+  Exclude:
+    - test/**/*
+    - '*.gemspec'
+
+# `return parts` branches differ in intent (terminator vs. recursion exit);
+# collapsing them hurts readability.
+Lint/DuplicateBranch:
+  Exclude:
+    - lib/rubocop/cop/style/compact_module_nesting.rb
+
+Style/Documentation:
+  Enabled: false
