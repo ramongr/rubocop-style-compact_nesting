@@ -7,3 +7,10 @@ Style/CompactModuleNesting:
   VersionAdded: '0.1'
   SafeAutoCorrect: true
   StyleGuide: ~
+
+# Style/ClassAndModuleChildren expects the opposite of what
+# Style/CompactModuleNesting enforces. Disable it by default to avoid the
+# two cops fighting over the same code. Users who want it can re-enable
+# it in their own .rubocop.yml.
+Style/ClassAndModuleChildren:
+  Enabled: false

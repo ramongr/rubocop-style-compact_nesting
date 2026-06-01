@@ -85,10 +85,15 @@ gem 'rubocop-style-compact_nesting', require: false
 # .rubocop.yml
 plugins:
   - rubocop-style-compact_nesting
+```
 
-# This cop conflicts with the built-in Style/ClassAndModuleChildren.
+The plugin disables `Style/ClassAndModuleChildren` by default because that
+cop enforces the opposite layout. If you want it back, re-enable it in
+your own config:
+
+```yaml
 Style/ClassAndModuleChildren:
-  Enabled: false
+  Enabled: true
 ```
 
 Requires RuboCop `>= 1.72` and Ruby `>= 3.1`.

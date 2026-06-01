@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1] - 2026-06-01
+
+### Changed
+- Plugin default config now disables `Style/ClassAndModuleChildren`. That
+  cop enforces the opposite layout of `Style/CompactModuleNesting`, so the
+  two would always disagree. Users who want `Style/ClassAndModuleChildren`
+  can re-enable it explicitly in their own `.rubocop.yml`.
+
 ## [0.1.0] - 2026-06-01
 
 ### Added
