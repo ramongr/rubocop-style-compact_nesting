@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.2] - 2026-06-01
+
+### Changed
+- README now ships with gem version, CI status, downloads, and license
+  badges.
+
+### Added
+- Regression test pinning the plugin's default config behaviour.
+
+### Internal
+- Ruby 4.0 (preview) added to the CI matrix as a non-blocking job.
+- `CONTRIBUTING.md` documenting the dev loop, PR flow, and tag-driven
+  release process.
+
 ## [0.1.1] - 2026-06-01
 
 ### Changed
